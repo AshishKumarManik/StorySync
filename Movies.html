@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sen:wght@400..800&display=swap" 
+        rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Movies & Books Recomdations </title>
+    <title>Movie Slideshow</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo"><b>StorySync</b></h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Recent</li>
+                    <li class="menu-list-item">Trends</li>
+                    <li class="menu-list-item">Movies</li> 
+                    <li class="menu-list-item">Books</li> 
+                    <li class="menu-list-item">Popular</li> 
+                    <li class="menu-list-item">Series</li>
+                    <!-- <li class="menu-list-item">TV</li> -->
+                    <li class="menu-list-item">Anime</li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Movies or Books">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture"src="image/logo(1).png" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon active"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-solid fa-house"></i>
+        <i class="left-menu-icon fa-solid fa-users"></i>
+        <i class="left-menu-icon fa-solid fa-book"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-half"></i>
+        <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div>
+    
+    <div class="container">
+        <div class="contener-content">
+            <div class="featured-content"
+                style="background:url('#') liner-gradient(to bottom,rgba(146, 28, 28, 0),#1cc822), ;">
+                <img class="featured-title" src="image/The Gorge.jpg" alt="The Gorge">
+                <p class="featured-desc">Elite snipers Levi and Drasa are assigned to guard a classified gorge, unaware of each other’s presence. 
+                    As they uncover a hidden danger within, they must join forces to survive and uncover the truth behind their mission.</p>
+                    <a href="movies/The Gorge (2025).mkv">
+                        <button class="movie-list-item-buttom">Watch</button>
+                    </a>
+                </div>
+
+<br><br>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title"> New Releases </h1><br><br><br>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/lucky baskhar.avif" alt="Lucky Baskhar">
+                        <span class="movie-list-item-title">Lucky Baskhar</span>
+                        <p class="movie-list-item-desc"><i>A lower middle class bank cashier who entangled in financial scam to support his family</i></p>
+                            <a href="https://www.google.com/">
+                                <button class="movie-list-item-buttom">Watch</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/mufasa.avif" alt="">
+                        <span class="movie-list-item-title"> Mufasa: The Lion King</span>
+                        <p class="movie-list-item-desc"><i>An Orphaned cub Mufasa meets Taka, a royal heir, sparking a journey where a group of misfits seek their destinies.</i></p>
+                            <a href="movies/Mufasa.The.Lion.King.2024.mkv">
+                                <button class="movie-list-item-buttom">Watch</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Chhaava.avif" alt="">                        
+                            <span class="movie-list-item-title"> Chhaava</span>
+                        <p class="movie-list-item-desc"><i>It is a historical film depicting the bravery and sacrifices of "Chhatrapati Sambhaji Maharaj" in defending the Maratha Empire.</i></p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Marco.avif" alt="">                        
+                            <span class="movie-list-item-title"> Marco</span>
+                        <p class="movie-list-item-desc"><i>It is an intense Malayalam action thriller about a man's quest for vengeance after his brother's tragic murder, uncovering betrayal and hidden truths.</i></p>
+                            <a href="movies/Marco (2024).mkv">
+                                <button class="movie-list-item-buttom">Watch</button>
+                            </a>                        
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/baby john.avif" alt="">                        
+                            <span class="movie-list-item-title"> Baby John</span>
+                        <p class="movie-list-item-desc"><i>It is a Hindi action thriller about a cop who fakes his death to protect his daughter, only to confront his dark past when old enemies resurface.</i></p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/img2.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Deadpole</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/img2.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Deadpole</span>
+                        <p class="movie-list-item-desc">ewly married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title"> Trending </h1><br><br>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/lady in the lake.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Lady in the Lake</span>
+                        <p class="movie-list-item-desc"><i>In 1960s Baltimore, affluent Maddie Schwartz and struggling mother Cleo Sherwood navigate intersecting lives of privilege and hardship.</i></p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/A-Real-Pain.webp" alt="">                        
+                            <span class="movie-list-item-title"> A Real Pain</span>
+                        <p class="movie-list-item-desc"> married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/weekend in taipei.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Weekend in Taipei </span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <a href="movies/Weekend.In.Taipei.2024.mkv">
+                                <button class="movie-list-item-buttom">Watch</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Juror-2-scaled.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Juror-2</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/img2.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Deadpole</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/img2.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Deadpole</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/img2.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Deadpole</span>
+                        <p class="movie-list-item-desc">ewly married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+<br>
+            <div class="featured-content"
+            style="background: url('#'), liner-gradient(to bottom,rgba(0,0,0,0),#aa9898) ;">
+            <img class="featured-title" src="image/The Gorge.jpg" alt="Hello">
+                <p class="featured-desc">Veer Khurana and Koyal Chadda are a mismatched couple, who get into an arranged marriage. 
+                    A case of mistaken identity forces this newly married couple to go on the run on their wedding night and search for the mysterious "Charlie".</p>
+                <a href="#">
+                    <button class="featured-buttom">WATCH</button>
+                </a>
+                    
+            </div>
+
+<br><br>            
+            <div class="movie-list-container">
+                <h1 class="movie-list-title"> Action </h1><br><br>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/kill.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Kill</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                        <a href="movies/KILL.mkv">
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </a> 
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/John-Wick-2.png" alt="">                        
+                            <span class="movie-list-item-title"> John Wick 2</span>
+                        <p class="movie-list-item-desc"> married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                        <a href="movies/John_Wick_Ch-2.mkv">
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Uncharted.png" alt="Uncharted">                         
+                            <span class="movie-list-item-title"> Uncharted</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                        <a href="movies/Uncharted (2022).mkv">
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/kraven the hunter.avif" alt="">                        
+                            <span class="movie-list-item-title"> Kraven The Hunter</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                        <a href="movies/Kraven.the.Hunter..mkv">
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/red notice.webp" alt="">                        
+                            <span class="movie-list-item-title"> Red Notice</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                        <a href="#">
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/bloody daddy.jpg" alt="">                       
+                            <span class="movie-list-item-title"> Bloody Daddy</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                        <a href="#">
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/Red One.jpg" alt="">                        
+                            <span class="movie-list-item-title"> Red One</span>
+                        <p class="movie-list-item-desc">ewly married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                        <a href="movies/Red One (2024) 720p.mkv">
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </a>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title"> Horror </h1><br><br>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/13 Exorcisms(2022).jpg" alt="">                        
+                            <span class="movie-list-item-title">13 Exorcisms</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/the exostexorcism.jpg" alt="The Last Exorcism">
+                        <span class="movie-list-item-title">The Last Exorcism</span>
+                        <p class="movie-list-item-desc"> married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/The Conjuring.jpg" alt="The Conjuring ">
+                        <span class="movie-list-item-title">The Conjuring </span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/enil devil rise.jpg" alt="">
+                        <span class="movie-list-item-title">Enil Devil Rise</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="image/28-days-later.webp" alt="">
+                        <span class="movie-list-item-title">28 Days Later</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img2.jpg" alt="">
+                        <span class="movie-list-item-title"> Deadpole</span>
+                        <p class="movie-list-item-desc">married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img2.jpg" alt="">
+                        <span class="movie-list-item-title"> Deadpole</span>
+                        <p class="movie-list-item-desc">ewly married couple to go on the run on their wedding night and search for the mysterious "Charlie"</p>
+                            <button class="movie-list-item-buttom">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Welcome to <strong>StorySync</strong> — your ultimate destination for everything movies and books! Whether you're looking for the latest releases or personalized recommendations, we've got you covered.</p>
+            <p>Our goal is to bring movie and book lovers together by offering curated content, custom lists, and exciting discoveries tailored to your taste.</p>
+            <p>Join us on this cinematic journey and explore the world of stories like never before.</p>
+        </div>
+        
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.imdb.com/chart/top/">Movies</a></li>
+                <li><a href="https://time.com/collection/100-best-ya-books/">Books</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 StorySync. All rights reserved.</p>
+    </div>
+    
+</footer>
+
+</html>

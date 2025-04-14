@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+    height: 57px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Sen', sans-serif ;
+
+}
+
+.search-container {
+    position: relative;
+    width: 300px; 
+}
+
+.search-bar {
+    width: 80%;
+    padding: 10px 40px 10px 10px; 
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-button i {
+    color: #f10909;
+}
+
+.logo-container{
+    flex: 2;
+    
+}
+
+.logo{
+    font-family: TT 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: rgb(255, 0, 0);
+}
+
+.menu-container{
+    flex: 14;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 25px;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 15px; 
+}
+
+.profile-picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.toggle{
+    width: 45px;
+    height: 25px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: rgb(250, 3, 3);
+}
+
+.toggle-ball{
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon{
+    color: rgb(254, 254, 254);
+    font-size: 25px;
+    margin-bottom: 42px;
+}
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh);
+    color: whitesmoke;
+}
+
+.contener-content{
+    margin-left: 50px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.featured-content{
+    background-color: rgb(241, 58, 58);
+    height: 45vh;
+    padding: 33px;
+}
+
+.featured-title{
+    width: 400px;
+} 
+
+.featured-desc{
+    font-size: 15px;
+    width: 350px;
+    color: rgb(234, 255, 224);
+    margin: 30px 0;
+}
+
+.featured-buttom{
+    background-color: #4dbf00;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.movie-list-container{
+    padding: 0 17px;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list-title{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-buttom{
+    opacity: 1;
+}
+
+.movie-list-item-img{
+    transition: all 1s ease-in-out;
+    width: 280px;
+    height: 230px;
+    object-fit: contain;
+    
+}
+
+.movie-list-item-title{
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolutet;
+    top: 70%;
+    left: 43px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+
+}
+
+.movie-list-item-desc{
+    background-color: transparent;
+    padding: 17px;
+    font-size: 12px;
+    position: absolutet;
+    top: 50%;
+    left: 50px;
+    width: 280px;
+    opacity: 0;
+}
+
+.movie-list-item-buttom{
+    padding: 13px;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 13px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+    opacity: 0;
+    transition: 1.2s all ease-in-out;
+}
+
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 10;
+    color: darkgray;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER */
+
+
+/* .footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-section {
+    text-align: center;
+    font-family: 'Sen', sans-serif;
+    font-weight: bolder;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 3;
+    font-size: small;
+}
+
+.footer-section a {
+    font-size: 13px;
+    color: #c65858;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+} */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Sen', sans-serif;
+}
+
+.footer-section.about{
+    margin-left: 50px;
+    max-width: 400px;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 8px 0;
+}
+
+.footer-section a {
+    font-size: 14px;
+    color: #c65858;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: #111;
+    color: #aaa;
+    padding: 15px 10px;
+    font-size: 13px;
+}
