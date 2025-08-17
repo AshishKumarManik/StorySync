@@ -6,6 +6,14 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Vibrant gradient background for body */
+body {
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    font-family: 'Sen', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar{
     width: 100%;
     height: 60px;
@@ -29,28 +37,51 @@ body{
     width: 300px; 
 }
 
+.search-bar-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 240px;
+}
+
 .search-bar {
-    width: 80%;
-    padding: 10px 40px 10px 10px; 
-    border: 2px solid #ccc;
+    width: 100%;
+    padding: 8px 40px 8px 12px; /* space for button */
     border-radius: 20px;
+    border: 1px solid #43c6ac;
+    font-size: 1rem;
     outline: none;
-    font-size: 16px;
+    background: #fff;
+    transition: border-color 0.2s;
+}
+
+.search-bar:focus {
+    border-color: #191654;
 }
 
 .search-button {
     position: absolute;
-    right: 15px; 
+    right: 8px;
     top: 50%;
     transform: translateY(-50%);
-    background: none;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
     border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 1rem;
+    padding: 0;
 }
 
-.search-button i {
-    color: #f10909;
+.search-button:hover {
+    background: linear-gradient(90deg, #191654 0%, #43c6ac 100%);
+    transform: scale(1.08);
 }
 
 .logo-container{
@@ -79,13 +110,31 @@ body{
 
 .menu-list-item.active{
     font-weight: bold;
+    color: #43c6ac;
+    border-bottom: 2px solid #43c6ac;
 }
 
-.profile-container{
-    flex: 4;
+.profile-container {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    flex: none;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    background: linear-gradient(90deg, #e0e0e0 0%, #43c6ac 100%);
+    border-radius: 16px;
+    padding: 10px 24px;
+    box-shadow: 0 4px 16px rgba(60,60,60,0.10);
+    gap: 18px;
+    min-width: 220px;
+    transition: background 0.3s, box-shadow 0.3s;
+    z-index: 100;
+}
+
+body.dark-mode .profile-container {
+    background: linear-gradient(90deg, #232526 0%, #191654 100%);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
 }
 
 .profile-text-container{
@@ -93,36 +142,61 @@ body{
 }
 
 .profile-picture{
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid #43c6ac;
+    box-shadow: 0 2px 8px rgba(60,60,60,0.12);
+    margin-right: 12px;
 }
 
-.toggle{
+/* Toggle icon styles */
+.toggle {
     width: 45px;
     height: 25px;
-    background-color: white;
+    background: #e0e0e0;
     border-radius: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     position: relative;
-}
-
-.toggle-icon{
-    color: rgb(250, 3, 3);
-}
-
-.toggle-ball{
-    width: 22px;
-    height: 22px;
-    background-color: black;
-    position: absolute;
-    right: 1px;
-    border-radius: 50%;
     cursor: pointer;
+    margin-left: 16px;
+    box-shadow: 0 2px 8px rgba(60,60,60,0.10);
+    border: 2px solid #191654;
+    transition: background 0.3s, border 0.3s;
 }
+
+body.dark-mode .toggle {
+    background: #232526;
+    border: 2px solid #43c6ac;
+}
+
+.toggle-ball {
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 17px;
+    height: 17px;
+    background: linear-gradient(135deg, #43c6ac 0%, #191654 100%);
+    border-radius: 50%;
+    transition: left 0.3s, background 0.3s;
+    box-shadow: 0 2px 6px rgba(60,60,60,0.15);
+}
+
+body.dark-mode .toggle-ball {
+    background: linear-gradient(135deg, #191654 0%, #43c6ac 100%);
+}
+
+.toggle-ball.slide {
+    left: 24px;
+}
+
+/* Remove sun/moon icons for minimal look */
+.toggle-icon {
+    display: none;
+}
+
 .sidebar{
     width: 50px;
     height: 100%;
@@ -134,12 +208,20 @@ body{
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
+    background: rgba(25,22,84,0.85);
+    border-radius: 0 16px 16px 0;
+    box-shadow: 2px 0 12px rgba(60,60,60,0.10);
 }
 
 .left-menu-icon{
     color: rgb(254, 254, 254);
     font-size: 25px;
     margin-bottom: 42px;
+    transition: color 0.2s;
+}
+
+.left-menu-icon:hover {
+    color: #191654;
 }
 
 .container{
@@ -162,6 +244,17 @@ body {
     background-color: rgb(241, 58, 58);
     height: 45vh;
     padding: 33px;
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(60,60,60,0.12);
+    margin: 12px;
+    padding: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.featured-content:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(60,60,60,0.18);
 }
 
 .featured-title{
@@ -183,6 +276,14 @@ body {
     border: none;
     outline: none;
     font-weight: bold;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .movie-list-container{
@@ -210,6 +311,17 @@ body {
 .movie-list-item{
     margin-right: 30px;
     position: relative;
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(60,60,60,0.12);
+    margin: 12px;
+    padding: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.movie-list-item:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(60,60,60,0.18);
 }
 
 .movie-list-item:hover .movie-list-item-img{
@@ -269,6 +381,14 @@ body {
     right: 20px;
     opacity: 0;
     transition: 1.2s all ease-in-out;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
 
 .arrow{
@@ -294,6 +414,12 @@ body {
     color: white;
     padding: 40px 20px;
     font-family: 'Sen', sans-serif;
+    background: linear-gradient(90deg, #43c6ac 0%, #191654 100%);
+    color: #fff;
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 16px 16px 0 0;
 }
 
 .footer-section.about{
@@ -309,6 +435,7 @@ body {
 .footer-section h3 {
     margin-bottom: 15px;
     font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .footer-section p {
@@ -342,4 +469,82 @@ body {
     color: #aaa;
     padding: 15px 10px;
     font-size: 13px;
+    background: #191654;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 0 0 16px 16px;
+    font-size: 1rem;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .sidebar,
+body.dark-mode .container,
+body.dark-mode .footer-container,
+body.dark-mode .footer-bottom {
+    background: #191654 !important;
+    color: #fff !important;
+}
+
+body.dark-mode .featured-content,
+body.dark-mode .movie-list-item {
+    background: rgba(30,30,30,0.85);
+    color: #e0e0e0;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.32);
+}
+
+body.dark-mode .search-bar {
+    background: #232526;
+    color: #fff;
+    border: 1px solid #43c6ac;
+}
+
+body.dark-mode .search-button {
+    background: linear-gradient(90deg, #191654 0%, #43c6ac 100%);
+    color: #fff;
+}
+
+body.dark-mode .movie-list-item-buttom,
+body.dark-mode .featured-buttom {
+    background: linear-gradient(90deg, #191654 0%, #43c6ac 100%);
+    color: #fff;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(60,60,60,0.15);
+    min-width: 120px;
+    z-index: 100;
+    flex-direction: column;
+    padding: 8px 0;
+}
+
+.profile-dropdown-item {
+    display: block;
+    padding: 10px 18px;
+    color: #191654;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.profile-dropdown-item:hover {
+    background: #43c6ac;
+    color: #fff;
+}
+
+.profile-text-container {
+    position: relative;
+    cursor: pointer;
 }
